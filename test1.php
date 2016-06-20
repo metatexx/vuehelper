@@ -11,6 +11,9 @@ td.t_est {
 td.h, th.h { color: blue }
 ';
 
+$test2 = file_get_contents('pdwe-marktfilter.vue');
+
 $id = "_v12";
 
-echo scoped_css($css, $id).PHP_EOL;
+#echo scoped_css($css, $id).PHP_EOL;
+var_dump(process_vue($test2));
